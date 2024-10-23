@@ -1,0 +1,85 @@
+/* 重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 导航栏样式 */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+.navbar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+.navbar li {
+    display: inline;
+}
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+.navbar a:hover {
+    background-color: #575757;
+}
+
+/* 瀑布流样式 */
+.main-content {
+    padding: 20px;
+}
+.waterfall {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.waterfall-item {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.waterfall-item img {
+    width: 100%;
+    height: auto;
+}
+.waterfall-item .info {
+    padding: 15px;
+}
+.waterfall-item .info h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.waterfall-item .info .author {
+    display: flex;
+    align-items: center;
+}
+.waterfall-item .info .author img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.waterfall-item .info .author p {
+    margin: 0;
+    font-size: 14px;
+}
+@media (max-width: 768px) {
+    .waterfall-item {
+        width: calc(50% - 20px);
+    }
+}
+@media (max-width: 480px) {
+    .waterfall-item {
+        width: calc(100% - 20px);
+    }
+}
